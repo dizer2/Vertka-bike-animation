@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	overflow: hidden;
+}
+.wrap{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+	width: 1600px;
+	display: flex;
+	justify-content: center;
+}
+.Paje1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.Paje1__box-main{
+	width: 55%;
+	height: 100%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.header{
+	width: 100%;
+	height: 120px;
+}
+.header__wer{
+	width: 100%;
+	height: 50%;
+	padding-top: 25px;
+	padding-left: 38px;
+}
+.header__wer h1{
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.header__nic{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 30px;
+	padding-top: 20px;
+}
+.box-nic{
+	width: 95%;
+	height: 30px;
+	background-color: brown;
+	display: flex;
+	align-items: center;
+	z-index: 999;
+}
+.header__nic-navigation{
+	width: 110px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.header__nic-navigation:hover{
+	background-color: #777;
+	transition: 0.2s;
+}
+.main{
+	width: 100%;
+	height: 530px;
+	display: flex;
+}
+.main__left{
+	width: 30%;
+	height: 100%;
+	padding-left: 40.5px;
+	padding-top: 20px;
+}
+.main-box{
+	width: 190px;
+	height: 200px;
+	border: 1px solid black;
+	font-weight: 600;
+}
+.main__serchBox{
+	width: 100%;
+	height: 16.6%;
+	border-bottom: 1px solid black;
+	font-size: 10px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+.main__serchBox1{
+	width: 100%;
+	height: 16.6%;
+	border-bottom: 1px solid black;
+	font-size: 10px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+.main__serchBox2{
+	width: 100%;
+	height: 16.6%;
+	font-size: 10px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+.main__right{
+	width: 70%;
+	height: 100%;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 25px;
+
+}
+.main-right__kolo{
+	width: 540px;
+	height: 325px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.kololeft{
+	width: 140px;
+	height: 140px;
+	background-image: url(https://assets.codepen.io/383755/wheel4.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 690px;
+	left: 33px;
+	z-index: -1;
+	animation-name: kololeft;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+@keyframes kololeft {
+	0%{
+		position: relative;
+		left: -180px;
+		transform: rotate(-360deg);
+		opacity: 0;
+	}
+	100%{
+		position: relative;
+		top: 690px;
+	left: 33px;
+	}
+}
+
+.kolo1{
+	width: 300px;
+	height: 300px;
+	background-image: url(https://assets.codepen.io/383755/rear.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 400px;
+	left: 50px;
+	animation-name: kolo1;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+
+}
+@keyframes kolo1 {
+		0%{
+			position: relative;
+			top: 600px;
+			left: 80px;
+			transform: rotate(260deg);
+			opacity: 0;
+		}
+		100%{
+			position: relative;
+			top: 400px;
+			left: 50px;
+			opacity: 1;
+		}
+}
+
+.kolo2{
+	width: 360px;
+	height: 300px;
+	background-image: url(https://assets.codepen.io/383755/stem.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 100px;
+	left: 35px;
+	animation-name: kolo2;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+
+}
+@keyframes kolo2 {
+	0%{
+		position: relative;
+		top: 0px;
+		left: 480px;
+		transform: rotate(120deg);
+		opacity: 0;
+	}
+	100%{
+		position: relative;
+		top: 100px;
+		left: 35px;
+		opacity: 1;
+	}
+}
+.kolo3{
+	width: 360px;
+	height: 300px;
+	background-image: url(https://assets.codepen.io/383755/shaft.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: 200px;
+	left: 35px;
+	animation-name: kolo3;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+
+}
+@keyframes kolo3 {
+	0%{
+		position: relative;
+		left: 580px;
+		bottom: 260px;
+		transform: rotate(30deg);
+		opacity: 0;
+	}
+	100%{
+		position: relative;
+	bottom: 200px;
+	left: 35px;
+		opacity: 1;
+	}
+}
+.kolo4{
+	width: 360px;
+	height: 300px;
+	background-image: url(https://assets.codepen.io/383755/seat.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: 480px;
+	left: 55px;
+	z-index: -1;
+	animation-name: kolo4;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+@keyframes kolo4 {
+	0%{
+		position: relative;
+		bottom: 550px;
+		transform: rotate(180deg);
+		opacity: 0;
+	}
+	100%{
+		position: relative;
+		bottom: 480px;
+		left: 55px;
+	}
+}
+.koloright{
+	width: 140px;
+	height: 140px;
+	background-image: url(https://assets.codepen.io/383755/wheel4.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: 645px;
+	left: 305px;
+	animation-name: loloright;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+@keyframes loloright {
+	0%{
+		position: relative;
+		left: 480px;
+		transform: rotate(360deg);
+		opacity: 0;
+	}
+	100%{
+		position: relative;
+		bottom: 645px;
+		left: 305px;
+	}
+}
+.frame-kolo{
+	position: relative;
+	right: 60px;
+	top: 50px;
+}
+.main__lorem{
+	z-index: 999;
+	margin-top: 25px;
+}
+.footer{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	padding-left: 25px;
+
+}
+.box-nic1{
+	width: 95%;
+	height: 50px;
+	background-color: rgb(206, 204, 204);
+	display: flex;
+	align-items: center;
+	z-index: 999;
+}
+.header__nic-navigation1{
+	width: 110px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-size: 12px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.header__nic-navigation2{
+	width: 410px;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 30px;
+	align-items: center;
+	color: #333;
+	font-size: 12px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.footer__academy{
+	font-weight: 700;
+	font-size: 14px;
+}
